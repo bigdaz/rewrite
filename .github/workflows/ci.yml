@@ -3,16 +3,6 @@ name: ci
 
 on:
   push:
-    branches:
-      - main
-    tags-ignore:
-      - "*"
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch: {}
-  schedule:
-    - cron: "0 17 * * *"
 
 env:
   GRADLE_OPTS: '-Dorg.gradle.jvmargs="-Xmx2048m -XX:+HeapDumpOnOutOfMemoryError"'
